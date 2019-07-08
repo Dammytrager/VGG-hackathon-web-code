@@ -1,0 +1,142 @@
+body   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-color: #e9ecef;*/
+    background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0,0.9)), url("../bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.page   {
+}
+
+.title h1 {
+    color: #ffffff;
+}
+
+.controls   {
+    min-width: 350px;
+}
+
+.i-val  {
+    font-size: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.i-val-danger  {
+    border: solid 1px #b80025;
+    background-color: #b80025;
+    color: #ffffff;
+}
+
+.i-val-success  {
+    border: solid 1px #147129;
+    background-color: #147129;
+    color: #ffffff;
+}
+
+.total  {
+    font-size: 130%;
+}
+
+form, .energy   {
+    min-width: 350px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(52,58,64,.15);
+    min-height: 230px;
+}
+
+.energy .energy-title   {
+    text-align: center;
+    font-size: 22px;
+    color: #b80025;
+    text-decoration: underline;
+}
+
+.energy .energy-value   {
+    font-size: 20px;
+    /*font-weight: bold;*/
+    border: solid 1px #b80025;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+.switch-header  {
+    border-bottom: solid 1.5px #b80025;
+}
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: #b80025 !important;
+}
+
+.form-control   {
+    border-radius: 0 !important;
+}
+
+.display    {
+    font-size: 22px;
+    color: #333a40;
+    font-weight: bold;
+}
+
+.switch-cont    {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+}
+label .slider {
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+label .slider:before  {
+     position: absolute;
+     content: '';
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     top: 2.5px;
+     left: 2.5px;
+     background-color: #ffffff;
+     transition: 0.4s;
+ }
+
+label input  {
+    display: none;
+}
+label input:checked + .slider {
+    background-color: #b80025;
+}
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+.switch-cont .switch-text  {
+    display: inline-block;
+    font-size: 130%;
+}
+
+.switch-text .light-icon.orange    {
+    color: orange;
+}
+
